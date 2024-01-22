@@ -674,7 +674,6 @@ a:hover{
     .wrapper.personal{
         transform: scale(0.7);
         margin-right:22px;
-        border: solid red 1px;
     }
     .container{
         padding:0;
