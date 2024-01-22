@@ -25,7 +25,7 @@ moon.onclick=(e)=>{
         personalPic.style=`opacity:0.7;`
         moon.style="animation:glowingSun infinite 5s;"
         themeType.innerHTML=`
-        <img src='./images/socials/dark/arrowCurved.svg'> CHANGE TO NIGHT`
+        <img src='./images/icons/dark/arrowCurved.svg'> CHANGE TO NIGHT`
         clouds.forEach(cloud=>{
             cloud.style.display='block'
         })
@@ -37,7 +37,7 @@ moon.onclick=(e)=>{
                             opacity:0.25;`
         moon.style=`animation:glowing infinite 5s;`
         themeType.innerHTML=`
-        <img src='./images/socials/light/arrowCurved.svg'> CHANGE TO DAY`
+        <img src='./images/icons/light/arrowCurved.svg'> CHANGE TO DAY`
         clouds.forEach(cloud=>{
             cloud.style.display='none'
         })
