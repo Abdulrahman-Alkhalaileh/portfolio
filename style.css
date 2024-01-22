@@ -50,6 +50,9 @@ a:hover{
     animation: forwards unArrowAction .3s;
     margin-bottom: 60px;
     margin-top:-20px;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
 }
 
 .arrowDown:hover{
