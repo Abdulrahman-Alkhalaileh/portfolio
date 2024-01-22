@@ -793,7 +793,7 @@ a:hover{
     }
     #aboutMe{
         transform: scale(0.8) translateY(-250px);
-        height:90vh;
+        height:100vh;
     }
     .mainContent.projects p{
         font-size: 22px;
@@ -1160,7 +1160,6 @@ a:hover{
     }
     .projectContainer {
         transform: translateY(-180px);
-        height: 90vh;
     }
     .mainContent.projects{
         width:fit-content;
@@ -1174,7 +1173,7 @@ a:hover{
         width:70%;
     }
     #projects{
-        height:70vh;
+        height:80vh;
     }
 }
 
