@@ -1082,9 +1082,6 @@ a:hover{
 
 /********** Project section ***********/
 
-.projectsContainer{
-}
-
 .lightBody .sliderElement{
     box-shadow: #284a94 -10px 10px 10px 0px;
     background-color: #ffffff52;
@@ -1208,5 +1205,5 @@ a:hover{
 }
 
 .footer .socials{
-    justify-content: space-evenly;
+    justify-content: s;
 }
