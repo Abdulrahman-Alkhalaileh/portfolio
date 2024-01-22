@@ -49,6 +49,7 @@ a:hover{
     cursor:pointer;
     animation: forwards unArrowAction .3s;
     margin-bottom: 60px;
+    margin-top:-20px;
 }
 
 .arrowDown:hover{
@@ -297,7 +298,7 @@ a:hover{
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 50px 50px 50px;
+    padding: 50px 50px 0px 50px;
 }
 
 .personalPic{
@@ -663,6 +664,42 @@ a:hover{
     .theme{
         margin-right:40px;
     }
+    .personalPic{
+        /* transform: scale(0.7); */
+        left:10%;
+    }
+    .wrapper.personal{
+        transform: scale(0.7);
+    }
+    .container{
+        padding:0;
+    }
+    #home .mainContent{
+        padding-left:40px;
+        margin-top: -90px;
+    }
+    .wrapper.space{
+        transform: scale(0.8);
+    }
+    .arrowDown{
+        transform: scale(0.6);
+    }
+    .mainContent h2{
+        font-size: 40px;
+    }
+    .helloThere{
+        font-size: 40px;
+    }
+    .mainContent{
+        font-size: 20px;
+    }
+    .footer p{
+        font-size: 10px;
+        text-wrap:nowrap;
+    }
+    .footer .socials{
+        transform: scale(0.6);
+    }
 }
 
 @media only screen and (max-width:800px){
@@ -748,18 +785,18 @@ a:hover{
     .theme{
         right:100px;
     }
-    #aboutMe{
-        transform: scale(0.8);
-    }
 }
 
 @media only screen and (max-width:690px) {
     .container{
         width:100vw;
     }
-    .personalPic{
-        transform: scale(0.8);
-        left:10%;
+    #aboutMe{
+        transform: scale(0.8) translateY(-250px);
+        height:90vh;
+    }
+    .mainContent.projects p{
+        font-size: 22px;
     }
 }
 
@@ -776,7 +813,8 @@ a:hover{
         margin-top: -80px;
     }
     .personalPic{
-        left:10%;
+        left:12%;
+        top:-20px;
     }
     .theme{
         transform: translateX(-20px);
@@ -786,12 +824,20 @@ a:hover{
 @media only screen and (max-width:450px){
     #aboutMe{
         transform:scale(0.6);
+        margin-bottom: 0;
     }
+    /* .wrapper.center.last{
+        position:relative;
+        top:-250px;
+    } */
 }
 
 @media only screen and (max-width:400px){
     .personalPic{
         transform: scale(.6);
+    }
+    #home .mainContent{
+        margin-top: -150px;
     }
 }
 
@@ -998,10 +1044,10 @@ a:hover{
 .mainContent.about{
     display:none;
     text-align: center;
-    margin-bottom: 50px;
     animation: fadeIn 1s forwards;
     height: 350px;
     margin-bottom:20px;
+    margin-top:0;
     text-wrap: nowrap;
 }
 @keyframes fadeIn {
@@ -1108,14 +1154,27 @@ a:hover{
 }
 
 @media only screen and (max-width:790px){
+    
     .slider.projects{
-        transform:scale(0.7)
+        transform:scale(0.7);
+    }
+    .projectContainer {
+        transform: translateY(-180px);
+        height: 90vh;
     }
     .mainContent.projects{
         width:fit-content;
     }
     .sliderDots.projects{
-        margin-top:-100px !important;
+        margin-top:-130px !important;
+        transform: scale(0.7);
+    }
+    .mainContent.projects .helloThere{
+        transform:scale(0.8);
+        width:70%;
+    }
+    #projects{
+        height:70vh;
     }
 }
 
@@ -1160,11 +1219,18 @@ a:hover{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    animation: 1s glowing infinite;
+    animation: 1.5s selectMe infinite;
+}
+
+@keyframes selectMe {
+    50%{
+        opacity: 0.7;
+        filter: blur(3px);
+    }
 }
 
 .projectPic:hover {
-    filter: blur(3px);
+    opacity: 1;
     box-shadow:#0C5DCC 0px 0px 10px 2px;
     transform:scale(1.1);
     font-size: 120px;
@@ -1204,6 +1270,4 @@ a:hover{
     position:relative;
 }
 
-.footer .socials{
-    justify-content: s;
-}
+
