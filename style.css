@@ -673,6 +673,8 @@ a:hover{
     }
     .wrapper.personal{
         transform: scale(0.7);
+        margin-right:22px;
+        border: solid red 1px;
     }
     .container{
         padding:0;
@@ -1269,7 +1271,6 @@ a:hover{
     align-items: center;
     box-shadow: #0C5DCC 0 0 9px 5px;
     font-size: 20px;
-    position:relative;
 }
 
 
