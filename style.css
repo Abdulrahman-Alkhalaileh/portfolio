@@ -1272,4 +1272,24 @@ a:hover{
     font-size: 20px;
 }
 
-
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    background: #000000;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #0c5ccc; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0C5DCC; 
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(6, 61, 179);
+  }
