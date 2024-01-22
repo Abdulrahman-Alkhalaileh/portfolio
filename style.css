@@ -1207,3 +1207,6 @@ a:hover{
     position:relative;
 }
 
+.footer .socials{
+    justify-content: center;
+}
