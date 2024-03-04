@@ -1247,6 +1247,9 @@ a:hover {
 .projectPic.feedbackUi {
   background-image: url(./images/projects/feedbackUi.png);
 }
+.projectPic.todo {
+  background-image: url(./images/projects/todo.png);
+}
 
 .mainContent.projects .helloThere {
   width: 84%;
